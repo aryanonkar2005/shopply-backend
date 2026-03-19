@@ -1,11 +1,5 @@
 services:
 
-  dashboard:
-    image: ghcr.io/saleor/saleor-dashboard:3.22
-    restart: unless-stopped
-    ports:
-      - 9000:80
-
   db:
     image: docker.io/library/postgres:15-alpine
     ports:
