@@ -1033,7 +1033,7 @@ def create_fake_catalogue_promotion():
             PromotionRule(
                 promotion=promotion,
                 reward_value_type=RewardValueType.PERCENTAGE,
-                reward_value=random.choice([10, 20, 30, 40, 50]),
+                reward_value=random.choice([10, 15, 20]),
                 variants_dirty=True,
                 catalogue_predicate={
                     "productPredicate": {
@@ -1080,7 +1080,7 @@ def create_fake_order_promotion():
             PromotionRule(
                 promotion=promotion,
                 reward_value_type=RewardValueType.PERCENTAGE,
-                reward_value=random.choice([10, 20, 30, 40, 50]),
+                reward_value=random.choice([10, 15, 20]),
                 reward_type=RewardType.SUBTOTAL_DISCOUNT,
                 order_predicate={
                     "discountedObjectPredicate": {
